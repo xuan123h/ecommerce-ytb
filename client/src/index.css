@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  body {
+    background-color: #eee;
+  }
+}
+
+/* https://cf.shopee.vn/file/b62471ec58d6d7973ccd6e255b90c33c */
+.color {
+  background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+.one {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+}
+body .slick-prev:before,
+body .slick-next:before {
+  color: violet !important;
+  font-size: 24px !important;
+}
+.for {
+  background: rgba(255, 212, 36, 0.9);
+}
+.add {
+  width: 200px;
+  height: 35px;
+  background: red;
+  color: white;
+  box-shadow: inset 0 0 0 0 gray;
+  transition: all 0.5s ease;
+}
+.add:hover {
+  box-shadow: inset 300px 0 0 0 gray;
+}
+.addcart {
+  width: 200px;
+  height: 35px;
+  background: orange;
+  color: white;
+  box-shadow: inset 0 0 0 0 goldenrod;
+  transition: all 0.5s ease;
+}
+.addcart:hover {
+  box-shadow: inset 300px 0 0 0 goldenrod;
+}
+/* Button slider */
+body .swiper-button-next::after,
+body .swiper-button-prev::after {
+  color: black;
+  font-size: 25px;
+  transform: translateY(50px);
+}
+.slick-dots li button:before,
+.slick-dots li button:after {
+  display: none;
+}

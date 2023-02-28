@@ -1,5 +1,7 @@
+import useRouteElements from "./useRouteElements";
 function App() {
-  return <div> Ecommerce App </div>;
+  const routeElements = useRouteElements();
+  return <div>{routeElements}</div>;
 }
 
 export default App;
